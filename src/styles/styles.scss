@@ -1,0 +1,31 @@
+@import './shadcn.css';
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+@import 'variables';
+@import 'reset';
+@import 'svg';
+@import 'mixins';
+
+
+// Components
+@import 'common';
+@import './components/input-field.scss';
+@import './components/button.scss';
+@import './components/divider.scss';
+@import './components/quick-links.scss';
+@import './components/menu.scss';
+@import './components/tips.scss';
+@import './components/form-action.scss';
+@import './components/modal.scss';
+
+// Screens
+@import './main-app.scss';
+@import './page.scss';
+
+@import './group.scss';
+@import './about-us.scss';
+@import './contact.scss';
+@import './entrance.scss';

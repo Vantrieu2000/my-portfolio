@@ -1,0 +1,16 @@
+.divider {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &::before,
+    &::after {
+        flex: 1;
+        content: '';
+        height: 1px;
+        background-color: $stroke;
+    }
+}

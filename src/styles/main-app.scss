@@ -1,0 +1,45 @@
+.main-app {
+    background-color: $white;
+    color: $grey900;
+    height: 100vh;
+
+    .header {
+        height: 120px;
+        background: gray;
+        opacity: 0.6;
+    }
+
+    h1 {
+        color: $grey900;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%;
+    }
+
+    h2 {
+        color: $grey900;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+        letter-spacing: -0.36px;
+
+        +small {
+            color: $grey500;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 150%;
+            /* 24px */
+            letter-spacing: -0.32px;
+        }
+
+        >a {
+            transition: color 0.3s;
+
+            &:hover {
+                color: $blue500 !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.contact {
+  padding: 10px 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+
+  &__title {
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: bold;
+  }
+
+  &__information {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &__address {
+      &__title {
+        display: flex;
+        gap: 15px;
+      }
+    }
+
+    &__phone {
+      display: flex;
+      gap: 15px;
+    }
+
+    &__mail {
+      display: flex;
+      gap: 15px;
+    }
+  }
+
+}

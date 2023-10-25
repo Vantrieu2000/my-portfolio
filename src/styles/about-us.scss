@@ -1,0 +1,52 @@
+.about-us {
+  padding: 10px 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  &__title {
+    font-size: 32px;
+  }
+
+  &__introduction {
+    font-size: 18px;
+    line-height: 28px;
+
+  }
+
+  &__product {
+    &__title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    &__content {
+      padding: 10px 50px;
+
+      ul {
+        list-style-type: disc;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        li {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  &__image {
+    &__title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    &__content {
+      padding: 10px 50px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+  }
+}

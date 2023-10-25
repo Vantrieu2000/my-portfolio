@@ -1,0 +1,49 @@
+.page {
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 24px;
+        margin-bottom: 24px;
+
+        border-bottom: 1px solid $stroke;
+
+        &--with-action {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &__action {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+        }
+    }
+
+    &__inner-wrapper {
+        display: flex;
+        padding: 32px;
+        flex-direction: column;
+        gap: 24px;
+
+        border-radius: 16px;
+        background: $blue100;
+
+        &__container {
+            display: flex;
+            padding: 32px;
+            flex-direction: column;
+            gap: 16px;
+
+            border-radius: 16px;
+            background: $white;
+            height: 100%;
+
+            >form {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+            }
+        }
+    }
+}

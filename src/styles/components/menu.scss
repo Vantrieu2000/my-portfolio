@@ -1,0 +1,116 @@
+.user-image {
+    width: 48px;
+    height: 48px;
+    aspect-ratio: 1/1;
+    border-radius: 98px;
+}
+.menu {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    &__title {
+        padding: 16px 0px 32px 8px;
+    }
+
+    &__items {
+        color: $inactive-text;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 4px;
+    }
+
+    &__profile {
+        color: $white;
+        padding: 16px;
+        border-top: 1px solid #3a4452;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            span {
+                color: $white;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 20px; /* 142.857% */
+            }
+
+            a {
+                color: $white;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 16px; /* 133.333% */
+                text-decoration-line: underline;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &-item {
+        user-select: none;
+        padding: 8px;
+        display: grid;
+        grid-template-columns: 24px 1fr;
+        column-gap: 12px;
+        align-items: center;
+
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        cursor: pointer;
+
+        > :nth-child(1) {
+            height: 24px;
+        }
+
+        &.collapsible {
+            > :nth-child(2) {
+                &::after {
+                    content: $icon_collapsible_arrow;
+                    pointer-events: none;
+                    position: absolute;
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    margin-left: 4px;
+
+                    transform: rotate(180deg);
+                    transition: transform 0.2s;
+                }
+            }
+            &.collapsible--show {
+                > :nth-child(2) {
+                    &::after {
+                        transform: rotate(0deg);
+                    }
+                }
+            }
+        }
+
+        &.child-item {
+            // color: $grey50;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%; /* 22.4px */
+        }
+        &.active-item {
+            color: $active-text;
+
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 160%; /* 22.4px */
+        }
+    }
+}
